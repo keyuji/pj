@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GetPrefsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ear-gw-yLO">
+                                <rect key="frame" x="20" y="540" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3ZK-sn-UQR"/>
+                                    <constraint firstAttribute="height" constant="40" id="eGs-MV-18L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="取得"/>
+                                <connections>
+                                    <action selector="getPrefectures:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zH6-RO-N57"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZi-ap-7tS">
+                                <rect key="frame" x="480" y="540" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fho-pJ-jjM"/>
+                                    <constraint firstAttribute="width" constant="100" id="NoD-tT-Mr1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="クリア"/>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gMq-jh-3L7"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8V-a4-ZGu">
+                                <rect key="frame" x="70" y="120" width="460" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P8V-a4-ZGu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="2b4-TM-tMU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P8V-a4-ZGu" secondAttribute="trailing" constant="50" id="4CY-1I-Ws3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RZi-ap-7tS" secondAttribute="bottom" constant="20" id="IKH-fn-Jyu"/>
+                            <constraint firstItem="P8V-a4-ZGu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="PMh-KA-LkG"/>
+                            <constraint firstItem="ear-gw-yLO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Sij-o5-bif"/>
+                            <constraint firstItem="RZi-ap-7tS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bVa-Ej-jTu"/>
+                            <constraint firstItem="P8V-a4-ZGu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ebA-7W-Qho"/>
+                            <constraint firstItem="RZi-ap-7tS" firstAttribute="top" secondItem="P8V-a4-ZGu" secondAttribute="bottom" constant="100" id="j2Q-JH-7Sl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ear-gw-yLO" secondAttribute="bottom" constant="20" id="kHF-bj-Dss"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="prefecturesTextView" destination="P8V-a4-ZGu" id="mLz-cm-vRZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="506"/>
+        </scene>
+    </scenes>
+</document>

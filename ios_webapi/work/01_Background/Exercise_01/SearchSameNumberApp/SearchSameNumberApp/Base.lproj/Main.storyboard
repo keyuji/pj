@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SearchSameNumberApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="整数を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tbi-1R-yfX">
+                                <rect key="frame" x="175" y="283" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="37X-uY-UaV"/>
+                                    <constraint firstAttribute="height" constant="35" id="MPC-kB-HuM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESc-9E-bnl">
+                                <rect key="frame" x="238" y="338" width="125" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="2z4-VL-RAe"/>
+                                    <constraint firstAttribute="height" constant="40" id="bAu-zS-ZYg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="実行"/>
+                                <connections>
+                                    <action selector="startSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mGy-qV-c2g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="整数の検索" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2h-xT-DVl">
+                                <rect key="frame" x="20" y="168" width="560" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="試行回数を表示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Im-XC-yJ9">
+                                <rect key="frame" x="20" y="232" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDQ-22-2Ac">
+                                <rect key="frame" x="20" y="398" width="560" height="202"/>
+                                <string key="text">0から99,999までの数を入力してください。
+プログラムは入力値と同じ数値が見つかるまで、0から100,000,000のランダムな数値を繰り返し作成します。最終的に、入力値と同じ数を見つけるまでの試行回数を表示します。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7mA-Jl-JYx">
+                                <rect key="frame" x="282" y="282" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ESc-9E-bnl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2bt-zU-Xoe"/>
+                            <constraint firstItem="3Im-XC-yJ9" firstAttribute="top" secondItem="b2h-xT-DVl" secondAttribute="bottom" constant="40" id="2l8-nx-SqD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Im-XC-yJ9" secondAttribute="trailing" id="484-yP-NZD"/>
+                            <constraint firstItem="b2h-xT-DVl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4kP-oO-uGj"/>
+                            <constraint firstItem="ESc-9E-bnl" firstAttribute="top" secondItem="tbi-1R-yfX" secondAttribute="bottom" constant="20" id="73q-Ex-ZYs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b2h-xT-DVl" secondAttribute="trailing" id="DiY-c8-ltE"/>
+                            <constraint firstItem="gDQ-22-2Ac" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FCF-hJ-h7n"/>
+                            <constraint firstItem="gDQ-22-2Ac" firstAttribute="top" secondItem="ESc-9E-bnl" secondAttribute="bottom" constant="20" id="VYI-aV-5tg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gDQ-22-2Ac" secondAttribute="bottom" id="aaj-ew-yNZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gDQ-22-2Ac" secondAttribute="trailing" id="fTs-Oi-Pww"/>
+                            <constraint firstItem="3Im-XC-yJ9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jAU-Ly-nUW"/>
+                            <constraint firstItem="tbi-1R-yfX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="l1J-lB-atR"/>
+                            <constraint firstItem="7mA-Jl-JYx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mPy-Ro-6jI"/>
+                            <constraint firstItem="7mA-Jl-JYx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mpG-hU-wmv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b2h-xT-DVl" secondAttribute="trailing" id="nyw-Gh-dKn"/>
+                            <constraint firstItem="b2h-xT-DVl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sir-8G-mCb"/>
+                            <constraint firstItem="tbi-1R-yfX" firstAttribute="top" secondItem="3Im-XC-yJ9" secondAttribute="bottom" constant="30" id="vny-V7-laO"/>
+                            <constraint firstItem="tbi-1R-yfX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wYt-BO-faB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="ESc-9E-bnl" id="sBP-nu-z3c"/>
+                        <outlet property="indicator" destination="7mA-Jl-JYx" id="dfa-y1-vI8"/>
+                        <outlet property="inputTextField" destination="tbi-1R-yfX" id="b6p-eh-rc8"/>
+                        <outlet property="resultLabel" destination="3Im-XC-yJ9" id="dty-o6-z8f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="552"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BackgroundSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="素数判定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMI-2e-1cv">
+                                <rect key="frame" x="20" y="181" width="560" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="整数を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5rI-vV-U8w">
+                                <rect key="frame" x="200" y="285" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HE1-th-kCI"/>
+                                    <constraint firstAttribute="width" constant="200" id="QkL-oo-BZi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ここに判定結果を表示" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQd-7d-00R">
+                                <rect key="frame" x="20" y="245" width="560" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlj-8P-hdv">
+                                <rect key="frame" x="238" y="345" width="125" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="SQP-oN-2Rc"/>
+                                    <constraint firstAttribute="height" constant="40" id="Xx7-Ru-GJQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="判定"/>
+                                <connections>
+                                    <action selector="decide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QEy-1l-MRh"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="jIF-nS-nUo">
+                                <rect key="frame" x="282" y="282" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TE1-gy-qMm">
+                                <rect key="frame" x="40" y="400" width="520" height="61"/>
+                                <string key="text">2から500,000,000の範囲の整数を入力して、判定ボタンをタップしてください。大きな数値の場合、判定に少し時間がかかります。
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jIF-nS-nUo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2nd-dV-FeK"/>
+                            <constraint firstItem="jIF-nS-nUo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9vO-sg-zLh"/>
+                            <constraint firstItem="eQd-7d-00R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9yN-4d-2EM"/>
+                            <constraint firstItem="5rI-vV-U8w" firstAttribute="top" secondItem="eQd-7d-00R" secondAttribute="bottom" constant="20" id="Fm1-Ti-7yi"/>
+                            <constraint firstItem="5rI-vV-U8w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ILg-6k-n2Q"/>
+                            <constraint firstItem="5rI-vV-U8w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jcs-da-5dw"/>
+                            <constraint firstItem="Rlj-8P-hdv" firstAttribute="top" secondItem="5rI-vV-U8w" secondAttribute="bottom" constant="30" id="KJw-yd-K2H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TE1-gy-qMm" secondAttribute="trailing" constant="20" id="UlS-Cm-F0A"/>
+                            <constraint firstItem="VMI-2e-1cv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="X2k-h3-B4q"/>
+                            <constraint firstItem="Rlj-8P-hdv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bcK-Ao-vVr"/>
+                            <constraint firstItem="TE1-gy-qMm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="dKT-Ql-HcU"/>
+                            <constraint firstItem="VMI-2e-1cv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="f0s-8g-xNi"/>
+                            <constraint firstItem="eQd-7d-00R" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="krP-Z2-jE0"/>
+                            <constraint firstItem="TE1-gy-qMm" firstAttribute="top" secondItem="Rlj-8P-hdv" secondAttribute="bottom" constant="15" id="oiE-Si-vGL"/>
+                            <constraint firstItem="eQd-7d-00R" firstAttribute="top" secondItem="VMI-2e-1cv" secondAttribute="bottom" constant="40" id="xQ1-t6-75k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicator" destination="jIF-nS-nUo" id="vik-1K-IAX"/>
+                        <outlet property="numberField" destination="5rI-vV-U8w" id="aJ2-wl-z6n"/>
+                        <outlet property="resultLabel" destination="eQd-7d-00R" id="Gve-M7-7gY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="217" y="458"/>
+        </scene>
+    </scenes>
+</document>
