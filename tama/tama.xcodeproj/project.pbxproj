@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		471BF7A71F9AED4A00A65386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471BF7A61F9AED4A00A65386 /* AppDelegate.swift */; };
+		471BF7A91F9AED4A00A65386 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471BF7A81F9AED4A00A65386 /* ViewController.swift */; };
+		471BF7AC1F9AED4A00A65386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471BF7AA1F9AED4A00A65386 /* Main.storyboard */; };
+		471BF7AE1F9AED4A00A65386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 471BF7AD1F9AED4A00A65386 /* Assets.xcassets */; };
+		471BF7B11F9AED4A00A65386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471BF7AF1F9AED4A00A65386 /* LaunchScreen.storyboard */; };
+		471BF7BC1F9AED4A00A65386 /* tamaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471BF7BB1F9AED4A00A65386 /* tamaTests.swift */; };
+		471BF7C71F9AED4A00A65386 /* tamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471BF7C61F9AED4A00A65386 /* tamaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		471BF7B81F9AED4A00A65386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 471BF79B1F9AED4A00A65386 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 471BF7A21F9AED4A00A65386;
+			remoteInfo = tama;
+		};
+		471BF7C31F9AED4A00A65386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 471BF79B1F9AED4A00A65386 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 471BF7A21F9AED4A00A65386;
+			remoteInfo = tama;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		471BF7A31F9AED4A00A65386 /* tama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		471BF7A61F9AED4A00A65386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		471BF7A81F9AED4A00A65386 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		471BF7AB1F9AED4A00A65386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		471BF7AD1F9AED4A00A65386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		471BF7B01F9AED4A00A65386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		471BF7B21F9AED4A00A65386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		471BF7B71F9AED4A00A65386 /* tamaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tamaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		471BF7BB1F9AED4A00A65386 /* tamaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamaTests.swift; sourceTree = "<group>"; };
+		471BF7BD1F9AED4A00A65386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		471BF7C21F9AED4A00A65386 /* tamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tamaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		471BF7C61F9AED4A00A65386 /* tamaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tamaUITests.swift; sourceTree = "<group>"; };
+		471BF7C81F9AED4A00A65386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		471BF7A01F9AED4A00A65386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		471BF7B41F9AED4A00A65386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		471BF7BF1F9AED4A00A65386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		471BF79A1F9AED4A00A65386 = {
+			isa = PBXGroup;
+			children = (
+				471BF7A51F9AED4A00A65386 /* tama */,
+				471BF7BA1F9AED4A00A65386 /* tamaTests */,
+				471BF7C51F9AED4A00A65386 /* tamaUITests */,
+				471BF7A41F9AED4A00A65386 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		471BF7A41F9AED4A00A65386 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				471BF7A31F9AED4A00A65386 /* tama.app */,
+				471BF7B71F9AED4A00A65386 /* tamaTests.xctest */,
+				471BF7C21F9AED4A00A65386 /* tamaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		471BF7A51F9AED4A00A65386 /* tama */ = {
+			isa = PBXGroup;
+			children = (
+				471BF7A61F9AED4A00A65386 /* AppDelegate.swift */,
+				471BF7A81F9AED4A00A65386 /* ViewController.swift */,
+				471BF7AA1F9AED4A00A65386 /* Main.storyboard */,
+				471BF7AD1F9AED4A00A65386 /* Assets.xcassets */,
+				471BF7AF1F9AED4A00A65386 /* LaunchScreen.storyboard */,
+				471BF7B21F9AED4A00A65386 /* Info.plist */,
+			);
+			path = tama;
+			sourceTree = "<group>";
+		};
+		471BF7BA1F9AED4A00A65386 /* tamaTests */ = {
+			isa = PBXGroup;
+			children = (
+				471BF7BB1F9AED4A00A65386 /* tamaTests.swift */,
+				471BF7BD1F9AED4A00A65386 /* Info.plist */,
+			);
+			path = tamaTests;
+			sourceTree = "<group>";
+		};
+		471BF7C51F9AED4A00A65386 /* tamaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				471BF7C61F9AED4A00A65386 /* tamaUITests.swift */,
+				471BF7C81F9AED4A00A65386 /* Info.plist */,
+			);
+			path = tamaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		471BF7A21F9AED4A00A65386 /* tama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 471BF7CB1F9AED4A00A65386 /* Build configuration list for PBXNativeTarget "tama" */;
+			buildPhases = (
+				471BF79F1F9AED4A00A65386 /* Sources */,
+				471BF7A01F9AED4A00A65386 /* Frameworks */,
+				471BF7A11F9AED4A00A65386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tama;
+			productName = tama;
+			productReference = 471BF7A31F9AED4A00A65386 /* tama.app */;
+			productType = "com.apple.product-type.application";
+		};
+		471BF7B61F9AED4A00A65386 /* tamaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 471BF7CE1F9AED4A00A65386 /* Build configuration list for PBXNativeTarget "tamaTests" */;
+			buildPhases = (
+				471BF7B31F9AED4A00A65386 /* Sources */,
+				471BF7B41F9AED4A00A65386 /* Frameworks */,
+				471BF7B51F9AED4A00A65386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				471BF7B91F9AED4A00A65386 /* PBXTargetDependency */,
+			);
+			name = tamaTests;
+			productName = tamaTests;
+			productReference = 471BF7B71F9AED4A00A65386 /* tamaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		471BF7C11F9AED4A00A65386 /* tamaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 471BF7D11F9AED4A00A65386 /* Build configuration list for PBXNativeTarget "tamaUITests" */;
+			buildPhases = (
+				471BF7BE1F9AED4A00A65386 /* Sources */,
+				471BF7BF1F9AED4A00A65386 /* Frameworks */,
+				471BF7C01F9AED4A00A65386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				471BF7C41F9AED4A00A65386 /* PBXTargetDependency */,
+			);
+			name = tamaUITests;
+			productName = tamaUITests;
+			productReference = 471BF7C21F9AED4A00A65386 /* tamaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		471BF79B1F9AED4A00A65386 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "北";
+				TargetAttributes = {
+					471BF7A21F9AED4A00A65386 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					471BF7B61F9AED4A00A65386 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 471BF7A21F9AED4A00A65386;
+					};
+					471BF7C11F9AED4A00A65386 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 471BF7A21F9AED4A00A65386;
+					};
+				};
+			};
+			buildConfigurationList = 471BF79E1F9AED4A00A65386 /* Build configuration list for PBXProject "tama" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 471BF79A1F9AED4A00A65386;
+			productRefGroup = 471BF7A41F9AED4A00A65386 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				471BF7A21F9AED4A00A65386 /* tama */,
+				471BF7B61F9AED4A00A65386 /* tamaTests */,
+				471BF7C11F9AED4A00A65386 /* tamaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		471BF7A11F9AED4A00A65386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471BF7B11F9AED4A00A65386 /* LaunchScreen.storyboard in Resources */,
+				471BF7AE1F9AED4A00A65386 /* Assets.xcassets in Resources */,
+				471BF7AC1F9AED4A00A65386 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		471BF7B51F9AED4A00A65386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		471BF7C01F9AED4A00A65386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		471BF79F1F9AED4A00A65386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471BF7A91F9AED4A00A65386 /* ViewController.swift in Sources */,
+				471BF7A71F9AED4A00A65386 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		471BF7B31F9AED4A00A65386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471BF7BC1F9AED4A00A65386 /* tamaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		471BF7BE1F9AED4A00A65386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471BF7C71F9AED4A00A65386 /* tamaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		471BF7B91F9AED4A00A65386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 471BF7A21F9AED4A00A65386 /* tama */;
+			targetProxy = 471BF7B81F9AED4A00A65386 /* PBXContainerItemProxy */;
+		};
+		471BF7C41F9AED4A00A65386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 471BF7A21F9AED4A00A65386 /* tama */;
+			targetProxy = 471BF7C31F9AED4A00A65386 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		471BF7AA1F9AED4A00A65386 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				471BF7AB1F9AED4A00A65386 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		471BF7AF1F9AED4A00A65386 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				471BF7B01F9AED4A00A65386 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		471BF7C91F9AED4A00A65386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		471BF7CA1F9AED4A00A65386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		471BF7CC1F9AED4A00A65386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HRAJD2DJRB;
+				INFOPLIST_FILE = tama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.kita.tama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		471BF7CD1F9AED4A00A65386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HRAJD2DJRB;
+				INFOPLIST_FILE = tama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.kita.tama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		471BF7CF1F9AED4A00A65386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2KKW222AT;
+				INFOPLIST_FILE = tamaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.kita.tamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tama.app/tama";
+			};
+			name = Debug;
+		};
+		471BF7D01F9AED4A00A65386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2KKW222AT;
+				INFOPLIST_FILE = tamaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.kita.tamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tama.app/tama";
+			};
+			name = Release;
+		};
+		471BF7D21F9AED4A00A65386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2KKW222AT;
+				INFOPLIST_FILE = tamaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.kita.tamaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tama;
+			};
+			name = Debug;
+		};
+		471BF7D31F9AED4A00A65386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2KKW222AT;
+				INFOPLIST_FILE = tamaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.kita.tamaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tama;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		471BF79E1F9AED4A00A65386 /* Build configuration list for PBXProject "tama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				471BF7C91F9AED4A00A65386 /* Debug */,
+				471BF7CA1F9AED4A00A65386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		471BF7CB1F9AED4A00A65386 /* Build configuration list for PBXNativeTarget "tama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				471BF7CC1F9AED4A00A65386 /* Debug */,
+				471BF7CD1F9AED4A00A65386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		471BF7CE1F9AED4A00A65386 /* Build configuration list for PBXNativeTarget "tamaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				471BF7CF1F9AED4A00A65386 /* Debug */,
+				471BF7D01F9AED4A00A65386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		471BF7D11F9AED4A00A65386 /* Build configuration list for PBXNativeTarget "tamaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				471BF7D21F9AED4A00A65386 /* Debug */,
+				471BF7D31F9AED4A00A65386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 471BF79B1F9AED4A00A65386 /* Project object */;
+}
