@@ -616,7 +616,6 @@
         <image name="Image" width="1000" height="526"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gLo-je-EJi"/>
         <segue reference="uWN-a6-1FL"/>
         <segue reference="PAm-8Y-Xdk"/>
     </inferredMetricsTieBreakers>
